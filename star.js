@@ -3,7 +3,7 @@ var star = function() {
   // this.y = random(-height, height);
   this.z = random(width);
   this.pz = this.z;
-  this.maxspeed = 3;
+  // this.maxspeed = 30;
   this.p = createVector(random(-width, width), random(-height, height));
   this.v = createVector(0, 0);
   this.a = createVector(0, 0);
@@ -17,7 +17,7 @@ var star = function() {
       this.v.add(this.a)
       this.p.add(this.v);
       // this.p.add(mouseVector)
-      this.v.limit = (this.maxspeed);
+      // this.v.limit = (this.maxspeed);
       this.pz = this.z;
     }
   }
