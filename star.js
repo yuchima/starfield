@@ -16,6 +16,7 @@ var star = function() {
       this.p = createVector(random(-width, width), random(-height,height));
       this.v.add(this.a)
       this.p.add(this.v);
+      // this.normmouse =
       // this.p.add(mouseVector)
       // this.v.limit = (this.maxspeed);
       this.pz = this.z;
@@ -33,7 +34,7 @@ var star = function() {
     this.px = map(this.p.x / this.pz, 0, 1, 0, width);
     this.py = map(this.p.y / this.pz, 0, 1, 0, height);
 
-    this.r = map(this.z, 0, width, 4, 0)
+    this.r = map(this.z, 0, width, 10, 0)
     this.pz = this.z;
 
     stroke(255);
